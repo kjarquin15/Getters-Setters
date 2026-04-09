@@ -1,0 +1,21 @@
+package main;
+
+public class Reloj {
+	  private int hora, minuto, segundo;
+
+	    public void setHora(int hora) {
+	        if (hora >= 0 && hora <= 23) this.hora = hora;
+	    }
+
+	    public void setMinuto(int minuto) {
+	        if (minuto >= 0 && minuto <= 59) this.minuto = minuto;
+	    }
+
+	    public void setSegundo(int segundo) {
+	        if (segundo >= 0 && segundo <= 59) this.segundo = segundo;
+	    }
+
+	    public String mostrarHora() {
+	        return String.format("%02d:%02d:%02d", hora, minuto, segundo);
+	    }
+}
